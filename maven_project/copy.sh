@@ -1,8 +1,10 @@
 #!/bin/sh
 
-cp /Users/atsushi/workspace/eclipse_project_template/maven_project/.classpath .
-cp /Users/atsushi/workspace/eclipse_project_template/maven_project/.project .
-cp /Users/atsushi/workspace/eclipse_project_template/maven_project/pom.xml .
-cp -r /Users/atsushi/workspace/eclipse_project_template/maven_project/.settings .
-cp -r /Users/atsushi/workspace/eclipse_project_template/maven_project/src .
-cp -r /Users/atsushi/workspace/eclipse_project_template/maven_project/target .
+DIR=`dirname $0`
+
+cp $DIR/.classpath .
+cp $DIR/.project .
+cp $DIR/pom.xml .
+cp -r $DIR/.settings .
+cp -r $DIR/src .
+cp -r $DIR/target .
